@@ -1,0 +1,37 @@
+host: dhcp-10-134-183-10.uawifi.arizona.edu
+Building DAG of jobs...
+Using shell: /bin/bash
+Provided cores: 8
+Rules claiming more threads will be scaled down.
+Job stats:
+job         count
+--------  -------
+frd_test        1
+total           1
+
+Select jobs to execute...
+Execute 1 jobs...
+
+[Tue Dec  3 21:01:02 2024]
+localrule frd_test:
+    output: frd_results/frd.png
+    jobid: 0
+    reason: Missing output files: frd_results/frd.png
+    resources: tmpdir=/var/folders/yd/8026v_8n487265dtjz0r2sdw0000gn/T
+
+[Tue Dec  3 21:01:02 2024]
+Error in rule frd_test:
+    jobid: 0
+    output: frd_results/frd.png
+    shell:
+        
+        mkdir -p frd_results
+        jupyter nbconvert --to notebook --execute frd-setup-automation.ipynb         --output notebooks/executed_frd_setup.ipynb --ExecutePreprocessor.timeout=-1
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look above for error message
+Complete log: .snakemake/log/2024-12-03T210102.212112.snakemake.log
+WorkflowError:
+At least one job did not complete successfully.

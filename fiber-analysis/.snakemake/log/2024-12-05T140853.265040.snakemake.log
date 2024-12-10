@@ -1,0 +1,24 @@
+host: dhcp-10-134-218-163.uawifi.arizona.edu
+Building DAG of jobs...
+Using shell: /bin/bash
+Provided cores: 8
+Rules claiming more threads will be scaled down.
+Job stats:
+job      count
+-----  -------
+all          1
+total        1
+
+Select jobs to execute...
+Execute 1 jobs...
+
+[Thu Dec  5 14:08:53 2024]
+localrule all:
+    jobid: 0
+    reason: Rules with neither input nor output files are always executed.
+    resources: tmpdir=/var/folders/yd/8026v_8n487265dtjz0r2sdw0000gn/T
+
+[Thu Dec  5 14:08:53 2024]
+Finished job 0.
+1 of 1 steps (100%) done
+Complete log: .snakemake/log/2024-12-05T140853.265040.snakemake.log

@@ -1,0 +1,8 @@
+host: dhcp-10-134-218-163.uawifi.arizona.edu
+Building DAG of jobs...
+MissingInputException in rule frd_analysis in file /Users/sonjachoi/Desktop/astr501-lab/final_project/fiber1/Snakefile-onlyfrd, line 19:
+Missing input files for rule frd_analysis:
+    output: notebooks/executed_frd_analysis_image1.ipynb, results/image1_analysis.png
+    wildcards: filename=image1
+    affected files:
+        results/image1.fits

@@ -1,0 +1,5 @@
+host: dhcp-10-134-218-163.uawifi.arizona.edu
+Building DAG of jobs...
+WildcardError in rule all in file /Users/sonjachoi/Desktop/astr501-lab/final_project/fiber1/Snakefile-onlyfrd, line 1:
+Wildcards in input files cannot be determined from output files: (rule all, line 1, /Users/sonjachoi/Desktop/astr501-lab/final_project/fiber1/Snakefile-onlyfrd)
+'date'

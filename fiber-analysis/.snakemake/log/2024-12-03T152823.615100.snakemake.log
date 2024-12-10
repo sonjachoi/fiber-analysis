@@ -1,0 +1,29 @@
+host: dhcp-10-134-218-171.uawifi.arizona.edu
+Building DAG of jobs...
+Using shell: /bin/bash
+Provided cores: 8
+Rules claiming more threads will be scaled down.
+Job stats:
+job                count
+---------------  -------
+plot_throughput        1
+total                  1
+
+Select jobs to execute...
+Execute 1 jobs...
+
+[Tue Dec  3 15:28:23 2024]
+localrule plot_throughput:
+    input: throughput.txt
+    output: results/throughput_plot.png
+    jobid: 0
+    reason: Missing output files: results/throughput_plot.png
+    resources: tmpdir=/var/folders/yd/8026v_8n487265dtjz0r2sdw0000gn/T
+
+RuleException in rule plot_throughput in file /Users/sonjachoi/Desktop/astr501-lab/final_project/fiber1/Snakefile, line 2:
+AttributeError: 'Wildcards' object has no attribute 'image', when formatting the following:
+
+        mkdir -p results  # Ensure the results directory exists
+        mkdir -p notebooks  # Ensure the notebooks directory exists
+        jupyter nbconvert --to notebook --execute plot_throughput.ipynb --output notebooks/executed_plot_throughput_{wildcards.image}.ipynb --ExecutePreprocessor.timeout=-1
+        

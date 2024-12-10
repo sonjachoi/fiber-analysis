@@ -1,0 +1,25 @@
+host: dhcp-10-134-218-171.uawifi.arizona.edu
+Building DAG of jobs...
+Using shell: /bin/bash
+Provided cores: 8
+Rules claiming more threads will be scaled down.
+Job stats:
+job                    count
+-------------------  -------
+generate_throughput        1
+total                      1
+
+Select jobs to execute...
+Execute 1 jobs...
+
+[Tue Dec  3 15:25:45 2024]
+localrule generate_throughput:
+    output: throughput.txt
+    jobid: 0
+    reason: Forced execution
+    resources: tmpdir=/var/folders/yd/8026v_8n487265dtjz0r2sdw0000gn/T
+
+[Tue Dec  3 15:25:45 2024]
+Finished job 0.
+1 of 1 steps (100%) done
+Complete log: .snakemake/log/2024-12-03T152545.767872.snakemake.log

@@ -1,0 +1,16 @@
+# Define input and output paths
+data_path = "data/throughput.txt"
+output_plot = "results/throughput_plot.png"
+
+# Rule to plot throughput data
+rule plot_throughput:
+    input: data_path
+    output: output_plot
+    shell:
+        """
+        # Ensure the results directory exists
+        mkdir -p results
+
+        # Execute the Jupyter notebook to plot throughput
+        jupyter nbconvert --to notebook --execute plot_throughput.ipynb --output notebooks/executed_plot_throughput.ipynb --ExecutePreprocessor.timeout=-1
+        """
